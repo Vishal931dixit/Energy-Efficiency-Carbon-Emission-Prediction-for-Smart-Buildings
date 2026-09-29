@@ -17,7 +17,6 @@ An end-to-end, production-grade Machine Learning solution designed to predict bu
 - [Machine Learning Architecture & Model Zoo](#-machine-learning-architecture--model-zoo)
 - [Model Performance & Diagnostics](#-model-performance--diagnostics)
 - [Model Explainability (XAI)](#-model-explainability-xai)
-- [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
 - [Business Impact & Real-World Application](#-business-impact--real-world-application)
 - [License & Contact](#-license--contact)
@@ -163,30 +162,6 @@ To ensure model transparency for architectural engineers and sustainability cons
 - **SHAP Beeswarm Plot** (`figures/07_shap_summary.png`): Illustrates feature impact direction and magnitude across individual building predictions.
 - **SHAP Feature Importance Bar Chart** (`figures/08_shap_bar.png`): Ranks overall feature importance globally.
 - **Permutation Importance** (`figures/09_perm_importance.png`): Fallback importance metric measuring drop in score when individual features are shuffled.
-
----
-
-## 📁 Project Structure
-
-```
-.
-├── Energy-Efficiency-Carbon-Emission-Prediction.ipynb  # Primary Jupyter Notebook
-├── ENB2012_data.xlsx                                  # Base UCI Building Dataset
-├── README.md                                          # Project Documentation
-├── data/                                              # Downloaded/Processed Data
-├── artifacts/                                         # Output CSV Reports & Models
-│   ├── metrics_energy.csv                             # Model performance table
-│   └── test_predictions_report.csv                   # Predictions & CO2 report
-└── figures/                                           # Saved EDA & Diagnostic Plots
-    ├── 01_distributions.png                           # Feature distribution plots
-    ├── 02_corr_heatmap.png                            # Correlation matrix
-    ├── 03_scatter_energy_*.png                        # Feature target scatter plots
-    ├── 04_pred_vs_actual.png                          # Best model accuracy plot
-    ├── 05_residuals.png                               # Residual distribution plot
-    ├── 07_shap_summary.png                            # SHAP beeswarm plot
-    ├── 08_shap_bar.png                                # SHAP bar plot
-    └── 09_perm_importance.png                         # Permutation importance plot
-```
 
 ---
 
